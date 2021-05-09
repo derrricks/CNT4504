@@ -21,4 +21,8 @@ Features Two (2) Programs:
 2) A multi-threaded client:
     - Transmits requests to the server on a specified network address and port
     - Must be able to spawn multiple client sessions
-    - Request which operation to preform and collect/output the data from the server
+    - Request which operation to preform and output the data from the server
+    - Collect the following data:
+        - Turn-around Time - (elapsed time) for each client request
+        - Total Turn-around Time - sum of the turn-around times for all the client requests
+        - Average Turn-around Time - (Total Turn-around Time) / (number of client requests)
