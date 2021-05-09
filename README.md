@@ -20,7 +20,30 @@ Features Two (2) Programs:
        
 2) A multi-threaded client:
     - Transmits requests to the server on a specified network address and port
-    - Must be able to spawn multiple client sessions
+    - Must be able to spawn multiple client sessions (1, 5, 10, 15, 20 and 25)
+    - Request which operation to preform and output the data from the server
+    - Collect the following data:
+        - Turn-around Time - (elapsed time) for each client request
+        - Total Turn-around Time - sum of the turn-around times for all the client requests
+        - Average Turn-around Time - (Total Turn-around Time) / (number of client requests)
+
+# Project 2 - Concurrent Socket Server:
+This project requires the implementation of a concurrent (multi-threaded) server for use in a client-server configuration to examine, analyze, and study the effects a concurrent server has on the efficiency (average turn-around time) of processing client requests.
+
+Features Two (2) Programs:
+1) A concurrent (multi-threaded) server:
+    - Spawns a new server instance for each client request (in parallel)
+    - Supports the following client request:
+        - Date and Time - the date and time on the server
+        - Uptime - how long the server has been running since last boot-up
+        - Memory Use - the current memory usage on the server
+        - Netstat - lists network connections on the server
+        - Current Users - list of users currently connected to the server
+        - Running Processes - list of programs currently running on the server
+
+2) A multi-threaded client:
+    - Transmits requests to the server on a specified network address and port
+    - Must be able to spawn multiple client sessions (1, 5, 10, 15, 20, 25 and 100)
     - Request which operation to preform and output the data from the server
     - Collect the following data:
         - Turn-around Time - (elapsed time) for each client request
