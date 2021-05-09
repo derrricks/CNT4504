@@ -1,0 +1,41 @@
+Iterative Socket Server
+
+Server and client must connect to same network address and port
+
+Server:
+- single threaded server
+- capable of accepting n-number of request
+- must handle client request 1 at a time (serially)
+
+Server must be able to support the following request:
+	•	Date and Time - the date and time on the server
+	•	Uptime - how long the server has been running since last boot-up
+	•	Memory Use - the current memory usage on the server
+	•	Netstat - lists network connections on the server
+	•	Current Users - list of users currently connected to the server
+	•	Running Processes - list of programs currently running on the server
+	•	Terminate
+
+When server is launched it must:
+1. Listen for client request
+2. Accept request determine/preform 1-7 following request
+3. Collect the resulting output
+4. Reply to client with request output
+5. Preform cleanup?
+6. Go back and do it all again
+
+Client:
+- multi-threaded client 
+- capable of spawning n-number of clients
+
+When client is launched it must:
+1. Request network address and port
+2. Request which operation request to preform
+3. Request n-number of clients to generate
+4. Collect the following data
+	a. Elapse time for each client request
+		> time it takes for the client request to travel to the server, be processed, and returned back to the client
+	b. Total elapsed time
+		> time it takes for the total number of client requests to be processed 
+	c. Average turn around time
+		> Total clasped time / total number of client request
