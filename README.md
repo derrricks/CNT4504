@@ -8,8 +8,8 @@ CNT4504 - Computer Networks
   - This project requires the implementation of an iterative (single-threaded) server for use in a client-server configuration to examine, analyze, and study the effects an iterative server has on the efficiency (average turn-around time) of processing client requests.
   
   - Create two (2) programs:
-      - 1) an iterative (single-threaded) server that accepts requests from clients and handle one client request at a time (serially)
-      - 2) a multi-threaded client capable of spawning numerous client sessions that connect to the server
+      1) an iterative (single-threaded) server that accepts requests from clients and handle one client request at a time (serially)
+      2) a multi-threaded client capable of spawning numerous client sessions that connect to the server
 
 # Project 2 - Concurrent Socket Server
   - 
